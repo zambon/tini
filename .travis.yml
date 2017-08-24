@@ -31,10 +31,10 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: Yk90ANpSPv1iJy8QDXCPwfaSmEr/WIJ3bzhQ6X8JvZjfrwTosbh0HrUzQyeac3nyvNwj7YJRssolOFc21IBKPpCFTZqYxSkuLPU6ysG4HGHgN6YJhOMm4mG4KKJ6741q3DJendhZpalBhCEi+NcZK/PCSD97Vl4OqRjBUged0fs=
+    secure: "emR9hLjjmNqWcCWYGaRCXTTCXsbSvaIOIfuN4cFwQmlhgNz00obCI9IhN5n77k9RGtKs5j8QL7tzcRiK4XhScCywUIs4OtSV6gL7hmQLkFvcMit/NMsmmI7UbevsQyGFh3McDEcTV9OI3HeXfUMgD4+K2DcpJ+Bb4QjHcSuGnqYRC1ClfeNTkwLfnZmaxGWy9F5LYoV3SBrE8Rxleao8hX3Spch3XN/z+B+CG7oSXFNucLW8urDIR1dLlXsA2N7CRSI/O46HE6WBnBAqpIhGqC6kzygXGSRP7KnllZmeJNgzSMFsR1l1FGzZVdylKtCop+m0RQKqUqLFdVM8wDlvXMRyJvks6RDZVMTQDHGujJORE4qSSsy6zJ05nb8s0qft6JGp3ADRJZhJ7u7Yz5yWYT/iUOMnVMXmXaNG+QyapkiwWeyPnU9n0FVkLUjSKyAagUrmfaP8baBFzjON4Lbm03JlZOukCPJIkT2UYMRBZSCkvD6GhcAwhm8EW0Tqp0lr4xVUn+l6MgH9WSSSpYnORkYVNJvXmk6HadyePbLUTOrfzjNmMCkSdVPoc6afBbIPRJDvXcw0Oh5pe7/GppazLZ19cfkma8FHvnCtj+eGIgzAWX0uR7SbuO11zhXW9zH3pFQ8hcm0gJ0Z3L0IZuh+2jiusQQOE22oVIFCu1PMn/Q="
   file: "${DIST_DIR}/*"
   file_glob: true
   on:
-    repo: krallin/tini
+    repo: zambon/tini
     tags: true
     condition: '-z "$MINIMAL"'
